@@ -1,0 +1,141 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "HR API",
+    "description" : "No description",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "paths" : {
+    "/employees/{employeeid}" : {
+      "get" : {
+        "summary" : "Retrieve employee",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Employee"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Remove Employee",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "patch" : {
+        "summary" : "Update employee",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/Employee"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "employeeid",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      } ]
+    },
+    "/employees" : {
+      "get" : {
+        "summary" : "search",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "style" : "form",
+          "explode" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "put" : {
+        "summary" : "Insert Employee",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/Employee"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Employee" : {
+        "type" : "object",
+        "required" : [ "Contact", "Identity" ],
+        "properties" : {
+          "Identity" : {
+            "type" : "object",
+            "required" : [ "id" ],
+            "properties" : {
+              "id" : {
+                "type" : "string"
+              },
+              "firstname" : {
+                "type" : "string"
+              },
+              "lastname" : {
+                "type" : "string"
+              }
+            }
+          },
+          "Contact" : {
+            "type" : "object",
+            "properties" : {
+              "street" : {
+                "type" : "string"
+              },
+              "postalCode" : {
+                "type" : "string"
+              },
+              "City" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

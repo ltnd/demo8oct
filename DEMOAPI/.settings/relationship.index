@@ -1,0 +1,104 @@
+[ {
+  "baseItem" : {
+    "id" : "_7y0QsITAEe-KJvgkIPcSpg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_-IH7MITAEe-KJvgkIPcSpg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kk_gAISQEe-KJvgkIPcSpg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kk_gAISQEe-KJvgkIPcSpg - employee",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_HjjKEISQEe-KJvgkIPcSpg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_JdiKgISQEe-KJvgkIPcSpg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_ZB53UISQEe-KJvgkIPcSpg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kk_gAISQEe-KJvgkIPcSpg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_JdiKgISQEe-KJvgkIPcSpg - ADDRESS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_JdiKgISQEe-KJvgkIPcSpg - EMPLOYEE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_SC90IOwSEe6pndxCNL76Gw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_LzL7sMItEeySSOVVnogafA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_LzL7sMItEeySSOVVnogafA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_VDbVQOcAEe6mS7m_2P6hXw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_2S04sC7mEe-ncdQMySAhbg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kpvKMFoTEeWAPM7TeQxAow",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_m2s4UHKKEeqgGJwCszwTwg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_shx34HKiEeqgGJwCszwTwg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_m2s4UHKKEeqgGJwCszwTwg - customer",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_shx34HKiEeqgGJwCszwTwg - DWH_POINTOFSALES",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_wVm8UOLgEe-wy-mbh068Pg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_5cEKgOLgEe-wy-mbh068Pg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+} ]

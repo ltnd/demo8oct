@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_2TJBwC7mEe-ncdQMySAhbg" name="B_QMI_Mysql_V8_CRM" id="_2S04sC7mEe-ncdQMySAhbg" label="B_QMI_Mysql_V8_CRM" dataPackage="_ehhdwD-cEe-LHoGh6ygoWQ" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://172.21.20.169:3306/ccl_crm?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="3306" Username="root" Password="enc:system.encryption.key.v1:vh9RUwe3iIbM+Mqhc0RAjYgKFv3qdDlcIqzdG1/lCeAdEUYv7IUi6c6kOzg=" ServerName="172.21.20.169" DatasourceName="" FileFieldName="" SID="ccl_crm" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_7YlhUS7VEe-ncdQMySAhbg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_7ZTTAC7VEe-ncdQMySAhbg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_7Zh8gC7VEe-ncdQMySAhbg" tag="Status" value=""/>
+    <taggedValue xmi:id="_7Zh8gS7VEe-ncdQMySAhbg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_7Zh8gi7VEe-ncdQMySAhbg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_7Zh8gy7VEe-ncdQMySAhbg" tag="Description" value=""/>
+    <taggedValue xmi:id="_7Zh8hC7VEe-ncdQMySAhbg" tag="Author" value=""/>
+    <taggedValue xmi:id="_7Zh8hS7VEe-ncdQMySAhbg" tag="otherParameter"/>
+    <taggedValue xmi:id="_pGdesC7eEe-ncdQMySAhbg" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_pGdesS7eEe-ncdQMySAhbg" tag="DB ProductVersion" value="8.4.0"/>
+    <taggedValue xmi:id="_g5OTUC7lEe-ncdQMySAhbg" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_7YlhUi7VEe-ncdQMySAhbg" key="CONN_PARA_KEY_USERNAME" value="root"/>
+    <parameters xmi:id="_jvoj8C7eEe-ncdQMySAhbg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_ehhdwD-cEe-LHoGh6ygoWQ" name="ccl_crm" dataManager="_2TJBwC7mEe-ncdQMySAhbg"/>
+</xmi:XMI>

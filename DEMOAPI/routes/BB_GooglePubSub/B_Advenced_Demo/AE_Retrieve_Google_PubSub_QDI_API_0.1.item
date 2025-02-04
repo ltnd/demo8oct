@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Ph980OJAEe-UaOmRKT53IA" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_Ph980eJAEe-UaOmRKT53IA" confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters xmi:id="_Ph980uJAEe-UaOmRKT53IA">
+    <elementParameter xmi:id="_Ph980-JAEe-UaOmRKT53IA" field="CHECK" name="LOG4J_RUN_ACTIVATE" value="true" show="false"/>
+    <elementParameter xmi:id="_Ph981OJAEe-UaOmRKT53IA" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Error" show="false"/>
+    <elementParameter xmi:id="_Ph981eJAEe-UaOmRKT53IA" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_Ph981uJAEe-UaOmRKT53IA" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_Ph981-JAEe-UaOmRKT53IA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_Ph982OJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_Ph982eJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_Ph982uJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_Ph982-JAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_Ph983OJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_Ph983eJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_Ph983uJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_Ph983-JAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_Ph984OJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_Ph984eJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_Ph984uJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_Ph984-JAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_Ph985OJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_Ph985eJAEe-UaOmRKT53IA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+  </parameters>
+  <node xmi:id="_Ph985uJAEe-UaOmRKT53IA" componentName="cConfig" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="280">
+    <elementParameter xmi:id="_Ph985-JAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cConfig_1" show="false"/>
+    <elementParameter xmi:id="_Ph986OJAEe-UaOmRKT53IA" field="MEMO_JAVA" name="CODE" value="&#xA;/*&#xA;*&#x9;Here you can put Java code that will be used within the route.&#xA;* &#xA;*   Usually you would register custom components in camelContext or&#xA;*   manipulate typeConverterRegistry.&#xA;*  &#xA;*   For example:&#xA;* &#xA;*     // Declaring a custom component in the Camel Context&#xA;*     camelContext.addComponent(&quot;component&quot;, new  org.apache.camel.component.dataset.DataSetComponent());&#xA;* &#xA;*     // Register a special type conversion &#xA;*     typeConverterRegistry.addTypeConverter(String.class, Object.class, new org.apache.camel.impl.converter.ToStringTypeConverter());&#xA;*/&#xA;"/>
+    <elementParameter xmi:id="_Ph986eJAEe-UaOmRKT53IA" field="CHECK" name="USE_MDC_LOGGING" value="false"/>
+    <elementParameter xmi:id="_Ph986uJAEe-UaOmRKT53IA" field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_Ph986-JAEe-UaOmRKT53IA" field="TABLE" name="DRIVER_JAR">
+      <elementValue xmi:id="_Ph987OJAEe-UaOmRKT53IA" elementRef="JAR_NAME" value="mvn:io.grpc/grpc-core/1.50.1/jar"/>
+    </elementParameter>
+    <elementParameter xmi:id="_Ph987eJAEe-UaOmRKT53IA" field="LABEL" name="WARNING" value="*Note: External JARs will not be embedded in OSGi bundle by default, to configure it please edit Route Manifest"/>
+    <elementParameter xmi:id="_Ph987uJAEe-UaOmRKT53IA" field="TEXT" name="LABEL" value="Configuration GCP"/>
+    <elementParameter xmi:id="_Ph987-JAEe-UaOmRKT53IA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Ph988OJAEe-UaOmRKT53IA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Ph988eJAEe-UaOmRKT53IA" componentName="cMessagingEndpoint" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="360">
+    <elementParameter xmi:id="_Ph988uJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_3" show="false"/>
+    <elementParameter xmi:id="_Ph988-JAEe-UaOmRKT53IA" field="TEXT" name="URI" value="&quot;google-pubsub://talendpresales:qcdi?&quot;"/>
+    <elementParameter xmi:id="_Ph989OJAEe-UaOmRKT53IA" field="TABLE" name="HOTLIBS"/>
+    <elementParameter xmi:id="_Ph989eJAEe-UaOmRKT53IA" field="CHECK" name="USE_CUSTOM_COMPONENT" value="true"/>
+    <elementParameter xmi:id="_Ph989uJAEe-UaOmRKT53IA" field="MODULE_LIST" name="LIBRARY" value="&quot;mvn:org.talend.libraries/camel-google-pubsub-alldep-3.20.6/6.0.0/jar&quot;"/>
+    <elementParameter xmi:id="_Ph989-JAEe-UaOmRKT53IA" field="TEXT" name="LABEL" value="google-pubsub"/>
+    <elementParameter xmi:id="_Ph98-OJAEe-UaOmRKT53IA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Ph98-eJAEe-UaOmRKT53IA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+    <elementParameter xmi:id="_Ph98-uJAEe-UaOmRKT53IA" field="MEMO" name="COMMENT" value="Pour génrer 250-300 messages : &#xD;&#xA;&#xD;&#xA;UPDATE public.customer&#xD;&#xA;SET store_id=3&#xD;&#xA;WHERE store_id=2&#xD;&#xA;;"/>
+  </node>
+  <node xmi:id="_Ph98--JAEe-UaOmRKT53IA" componentName="cREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="360">
+    <elementParameter xmi:id="_Ph98_OJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cREST_1" show="false"/>
+    <elementParameter xmi:id="_Ph98_eJAEe-UaOmRKT53IA" field="TEXT" name="API_ID" value="" show="false"/>
+    <elementParameter xmi:id="_Ph98_uJAEe-UaOmRKT53IA" field="TEXT" name="URL" value="&quot;http://127.0.0.1:8090/hubcustomer&quot;"/>
+    <elementParameter xmi:id="_Ph98_-JAEe-UaOmRKT53IA" field="CLOSED_LIST" name="SERVICE_TYPE" value="MANUAL"/>
+    <elementParameter xmi:id="_Ph99AOJAEe-UaOmRKT53IA" field="TEXT" name="PATH" value="constant(&quot;/Customer&quot;)"/>
+    <elementParameter xmi:id="_Ph99AeJAEe-UaOmRKT53IA" field="CLOSED_LIST" name="HTTP_METHOD" value="POST"/>
+    <elementParameter xmi:id="_Ph99AuJAEe-UaOmRKT53IA" field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json"/>
+    <elementParameter xmi:id="_Ph99A-JAEe-UaOmRKT53IA" field="CLOSED_LIST" name="ACCEPT_TYPE" value="*/*"/>
+    <elementParameter xmi:id="_Ph99BOJAEe-UaOmRKT53IA" field="TEXT" name="RESPONSE_BEAN" value=""/>
+    <elementParameter xmi:id="_Ph99BeJAEe-UaOmRKT53IA" field="TABLE" name="SCHEMAS" show="false"/>
+    <elementParameter xmi:id="_Ph99BuJAEe-UaOmRKT53IA" field="TEXT" name="RESOURCE_CLASS" value="beans.ResourceClass" show="false"/>
+    <elementParameter xmi:id="_Ph99B-JAEe-UaOmRKT53IA" field="TEXT" name="RESOURCE_OPERATION" value="constant(&quot;operationName&quot;)" show="false"/>
+    <elementParameter xmi:id="_Ph99COJAEe-UaOmRKT53IA" field="CHECK" name="SKIP_UNMARSHALLING" value="false"/>
+    <elementParameter xmi:id="_Ph99CeJAEe-UaOmRKT53IA" field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter xmi:id="_Ph99CuJAEe-UaOmRKT53IA" field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter xmi:id="_Ph99C-JAEe-UaOmRKT53IA" field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Ph99DOJAEe-UaOmRKT53IA" field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter xmi:id="_Ph99DeJAEe-UaOmRKT53IA" field="CHECK" name="ENABLE_SECURITY" value="false"/>
+    <elementParameter xmi:id="_Ph99DuJAEe-UaOmRKT53IA" field="CLOSED_LIST" name="SECURITY_TYPE" value="BASIC" show="false"/>
+    <elementParameter xmi:id="_Ph99D-JAEe-UaOmRKT53IA" field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Ph99EOJAEe-UaOmRKT53IA" field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:E00LSw3nEugoUgKF8Hm4H9HNmc5BPtEC3FEhwxjZ" show="false"/>
+    <elementParameter xmi:id="_Ph99EeJAEe-UaOmRKT53IA" field="CHECK" name="USE_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter xmi:id="_Ph99EuJAEe-UaOmRKT53IA" field="TEXT" name="ROLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Ph99E-JAEe-UaOmRKT53IA" field="CHECK" name="ENABLE_CORRELATION" value="false"/>
+    <elementParameter xmi:id="_Ph99FOJAEe-UaOmRKT53IA" field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Ph99FeJAEe-UaOmRKT53IA" field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter xmi:id="_Ph99FuJAEe-UaOmRKT53IA" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_Ph99F-JAEe-UaOmRKT53IA" field="TABLE" name="SL_META_DATA" show="false"/>
+    <elementParameter xmi:id="_Ph99GOJAEe-UaOmRKT53IA" field="TEXT" name="LABEL" value="API_Rest"/>
+    <elementParameter xmi:id="_Ph99GeJAEe-UaOmRKT53IA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Ph99GuJAEe-UaOmRKT53IA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+    <elementParameter xmi:id="_Ph99G-JAEe-UaOmRKT53IA" field="MEMO" name="COMMENT" value="D/D/AC => API Services => AC_API_Customer_With_QDI"/>
+  </node>
+  <node xmi:id="_Ph99HOJAEe-UaOmRKT53IA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="280">
+    <elementParameter xmi:id="_Ph99HeJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_Ph99HuJAEe-UaOmRKT53IA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;AD_Retrieve_Google_PubSub_QDI_API.cLog_2&quot;"/>
+    <elementParameter xmi:id="_Ph99H-JAEe-UaOmRKT53IA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_Ph99IOJAEe-UaOmRKT53IA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_Ph99IeJAEe-UaOmRKT53IA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_Ph99IuJAEe-UaOmRKT53IA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_Ph99I-JAEe-UaOmRKT53IA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_Ph99JOJAEe-UaOmRKT53IA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_Ph99JeJAEe-UaOmRKT53IA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_Ph99JuJAEe-UaOmRKT53IA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_Ph99J-JAEe-UaOmRKT53IA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_Ph99KOJAEe-UaOmRKT53IA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_Ph99KeJAEe-UaOmRKT53IA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_Ph99KuJAEe-UaOmRKT53IA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Ph99K-JAEe-UaOmRKT53IA" field="TEXT" name="LABEL" value="log"/>
+    <elementParameter xmi:id="_Ph99LOJAEe-UaOmRKT53IA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Ph99LeJAEe-UaOmRKT53IA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Ph99LuJAEe-UaOmRKT53IA" componentName="cConvertBodyTo" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="360">
+    <elementParameter xmi:id="_Ph99L-JAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cConvertBodyTo_1" show="false"/>
+    <elementParameter xmi:id="_Ph99MOJAEe-UaOmRKT53IA" field="TEXT" name="TOCLASS" value="String.class"/>
+    <elementParameter xmi:id="_Ph99MeJAEe-UaOmRKT53IA" field="TEXT" name="LABEL" value="ConversionBody"/>
+    <elementParameter xmi:id="_Ph99MuJAEe-UaOmRKT53IA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Ph99M-JAEe-UaOmRKT53IA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Ph99NOJAEe-UaOmRKT53IA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="280">
+    <elementParameter xmi:id="_Ph99NeJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_Ph99NuJAEe-UaOmRKT53IA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;AD_Retrieve_Google_PubSub_QDI_API.cLog_1&quot;"/>
+    <elementParameter xmi:id="_Ph99N-JAEe-UaOmRKT53IA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_Ph99OOJAEe-UaOmRKT53IA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_Ph99OeJAEe-UaOmRKT53IA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_Ph99OuJAEe-UaOmRKT53IA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_Ph99O-JAEe-UaOmRKT53IA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_Ph99POJAEe-UaOmRKT53IA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_Ph99PeJAEe-UaOmRKT53IA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_Ph99PuJAEe-UaOmRKT53IA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_Ph99P-JAEe-UaOmRKT53IA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_Ph99QOJAEe-UaOmRKT53IA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_Ph99QeJAEe-UaOmRKT53IA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_Ph99QuJAEe-UaOmRKT53IA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Ph99Q-JAEe-UaOmRKT53IA" field="TEXT" name="LABEL" value="log"/>
+    <elementParameter xmi:id="_Ph99ROJAEe-UaOmRKT53IA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Ph99ReJAEe-UaOmRKT53IA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Ph99RuJAEe-UaOmRKT53IA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="600" posY="280">
+    <elementParameter xmi:id="_Ph99R-JAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_Ph99SOJAEe-UaOmRKT53IA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;AD_Retrieve_Google_PubSub_QDI_API.cLog_3&quot;"/>
+    <elementParameter xmi:id="_Ph99SeJAEe-UaOmRKT53IA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_Ph99SuJAEe-UaOmRKT53IA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_Ph99S-JAEe-UaOmRKT53IA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_Ph99TOJAEe-UaOmRKT53IA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_Ph99TeJAEe-UaOmRKT53IA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_Ph99TuJAEe-UaOmRKT53IA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_Ph99T-JAEe-UaOmRKT53IA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_Ph99UOJAEe-UaOmRKT53IA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_Ph99UeJAEe-UaOmRKT53IA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_Ph99UuJAEe-UaOmRKT53IA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_Ph99U-JAEe-UaOmRKT53IA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_Ph99VOJAEe-UaOmRKT53IA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_Ph99VeJAEe-UaOmRKT53IA" field="TEXT" name="LABEL" value="log"/>
+    <elementParameter xmi:id="_Ph99VuJAEe-UaOmRKT53IA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Ph99V-JAEe-UaOmRKT53IA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_Ph99WOJAEe-UaOmRKT53IA" componentName="cMessageRouter" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="360">
+    <elementParameter xmi:id="_Ph99WeJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cMessageRouter_1" show="false"/>
+    <elementParameter xmi:id="_Ph99WuJAEe-UaOmRKT53IA" field="CLOSED_LIST" name="ROUTE_WHEN_LANGUAGES" value="constant" show="false"/>
+    <elementParameter xmi:id="_Ph99W-JAEe-UaOmRKT53IA" field="TEXT" name="LABEL" value="MessageRouter"/>
+    <elementParameter xmi:id="_Ph99XOJAEe-UaOmRKT53IA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Ph99XeJAEe-UaOmRKT53IA" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <connection xmi:id="_Ph99XuJAEe-UaOmRKT53IA" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cMessagingEndpoint_3" offsetLabelX="0" offsetLabelY="0" source="cMessagingEndpoint_3" target="cMessageRouter_1">
+    <elementParameter xmi:id="_Ph99X-JAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_Ph99YOJAEe-UaOmRKT53IA" connectorName="ROUTE" label="route3" lineStyle="14" metaname="cREST_1" offsetLabelX="0" offsetLabelY="0" source="cREST_1" target="cLog_1">
+    <elementParameter xmi:id="_Ph99YeJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <connection xmi:id="_Ph99YuJAEe-UaOmRKT53IA" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cLog_2" offsetLabelX="0" offsetLabelY="0" source="cLog_2" target="cConvertBodyTo_1">
+    <elementParameter xmi:id="_Ph99Y-JAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_Ph99ZOJAEe-UaOmRKT53IA" connectorName="ROUTE" label="route4" lineStyle="14" metaname="cConvertBodyTo_1" offsetLabelX="0" offsetLabelY="0" source="cConvertBodyTo_1" target="cLog_3">
+    <elementParameter xmi:id="_Ph99ZeJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="route4" show="false"/>
+  </connection>
+  <connection xmi:id="_Ph99ZuJAEe-UaOmRKT53IA" connectorName="ROUTE" label="route5" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLog_3" target="cREST_1">
+    <elementParameter xmi:id="_Ph99Z-JAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="route5" show="false"/>
+  </connection>
+  <connection xmi:id="_Ph99aOJAEe-UaOmRKT53IA" connectorName="ROUTE_WHEN" label="when1" lineStyle="15" metaname="cMessageRouter_1" offsetLabelX="0" offsetLabelY="0" source="cMessageRouter_1" target="cLog_2">
+    <elementParameter xmi:id="_Ph99aeJAEe-UaOmRKT53IA" field="CLOSED_LIST" name="ROUTETYPE" value="jsonpath"/>
+    <elementParameter xmi:id="_Ph99auJAEe-UaOmRKT53IA" field="MEMO_JAVA" name="CONDITION" value="&quot;.data.header__operation == 'UPDATE'&quot;"/>
+    <elementParameter xmi:id="_Ph99a-JAEe-UaOmRKT53IA" field="CHECK" name="ENDOFCHOICE" value="false"/>
+    <elementParameter xmi:id="_Ph99bOJAEe-UaOmRKT53IA" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_Ph99beJAEe-UaOmRKT53IA" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_Ph99buJAEe-UaOmRKT53IA" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;*Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_Ph99b-JAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="when1" show="false"/>
+  </connection>
+  <note xmi:id="_Ph99cOJAEe-UaOmRKT53IA" opaque="true" posX="160" posY="80" sizeHeight="161" sizeWidth="601" text="Pour générer 250-300 messages : UPDATE public.customer SET store_id=3 WHERE store_id=2&#xD;&#xA;Source : google-pubsub://talendpresales:pubsub?&#xD;&#xA;Destination : A_API_Customer_With_QDI (A_Validate\C_RealTime\D_Customer_Services)"/>
+  <subjob xmi:id="_Ph99ceJAEe-UaOmRKT53IA">
+    <elementParameter xmi:id="_Ph99cuJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cConfig_1" show="false"/>
+    <elementParameter xmi:id="_Ph99c-JAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_Ph99dOJAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_Ph99deJAEe-UaOmRKT53IA">
+    <elementParameter xmi:id="_Ph99duJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cMessagingEndpoint_3" show="false"/>
+    <elementParameter xmi:id="_Ph99d-JAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_Ph99eOJAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_Ph99eeJAEe-UaOmRKT53IA">
+    <elementParameter xmi:id="_Ph99euJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cREST_1" show="false"/>
+    <elementParameter xmi:id="_Ph99e-JAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_Ph99fOJAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_Ph99feJAEe-UaOmRKT53IA">
+    <elementParameter xmi:id="_Ph99fuJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_Ph99f-JAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_Ph99gOJAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_Ph99geJAEe-UaOmRKT53IA">
+    <elementParameter xmi:id="_Ph99guJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cConvertBodyTo_1" show="false"/>
+    <elementParameter xmi:id="_Ph99g-JAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_Ph99hOJAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_Ph99heJAEe-UaOmRKT53IA">
+    <elementParameter xmi:id="_Ph99huJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_Ph99h-JAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_Ph99iOJAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_Ph99ieJAEe-UaOmRKT53IA">
+    <elementParameter xmi:id="_Ph99iuJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_Ph99i-JAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_Ph99jOJAEe-UaOmRKT53IA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_Ph99jeJAEe-UaOmRKT53IA">
+    <elementParameter xmi:id="_Ph99juJAEe-UaOmRKT53IA" field="TEXT" name="UNIQUE_NAME" value="cMessageRouter_1" show="false"/>
+  </subjob>
+</talendfile:ProcessType>
