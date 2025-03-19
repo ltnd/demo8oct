@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_5dUx8OLkEe-NPIXwFIDMtg" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_5dUx8eLkEe-NPIXwFIDMtg" confirmationNeeded="false" name="Generate_RxShip_Medium">
+    <contextParameter xmi:id="_5dUx8uLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Period_ms" prompt="Gen_RxShip_Group_Period_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="2000" internalId="_f4kdcDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx8-LkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Repeat_count" prompt="Gen_RxShip_Group_Repeat_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_f4kdcTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx9OLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Row_Count_Min" prompt="Gen_RxShip_Group_Row_Count_Min?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_f4kdcjVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx9eLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Row_Count_Max" prompt="Gen_RxShip_Group_Row_Count_Max?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5" internalId="_f4kdczVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx9uLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Start_Delay_ms" prompt="Gen_RxShip_Start_Delay_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1000" internalId="_f4kddDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx9-LkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Message_Delay_Min_ms" prompt="Gen_RxShip_Message_Delay_Min_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="100" internalId="_f4kddTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx-OLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Message_Delay_Max_ms" prompt="Gen_RxShip_Message_Delay_Max_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="2000" internalId="_f4kddjVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx-eLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Feed_Direct_Channel_Name" prompt="Gen_RxShip_Feed_Direct_Channel_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;RxShip_Feed&quot;" internalId="_f4kddzVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx-uLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Name" prompt="ActiveMQ_Broker_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_f4kdeDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx--LkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Host" prompt="ActiveMQ_Broker_Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_f4kdeTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx_OLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Port" prompt="ActiveMQ_Broker_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="61616" internalId="_f4kdejVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx_eLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_IsPersistent" prompt="ActiveMQ_Broker_IsPersistent?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_f4kdezVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUx_uLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Persistence_Dir" prompt="ActiveMQ_Broker_Persistence_Dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/tmp/KahaDB" internalId="_f4kdfDVqEeu8GoZ4iFYSIQ"/>
+  </context>
+  <context xmi:id="_5dUx_-LkEe-NPIXwFIDMtg" confirmationNeeded="false" name="Generate_RxShip_Fast">
+    <contextParameter xmi:id="_5dUyAOLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Period_ms" prompt="Gen_RxShip_Group_Period_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="500" internalId="_f4kdfTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyAeLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Repeat_count" prompt="Gen_RxShip_Group_Repeat_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_f4kdfjVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyAuLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Row_Count_Min" prompt="Gen_RxShip_Group_Row_Count_Min?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_f4kdfzVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyA-LkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Row_Count_Max" prompt="Gen_RxShip_Group_Row_Count_Max?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5" internalId="_f4kdgDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyBOLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Start_Delay_ms" prompt="Gen_RxShip_Start_Delay_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1000" internalId="_f4kdgTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyBeLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Message_Delay_Min_ms" prompt="Gen_RxShip_Message_Delay_Min_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="50" internalId="_f4kdgjVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyBuLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Message_Delay_Max_ms" prompt="Gen_RxShip_Message_Delay_Max_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="500" internalId="_f4kdgzVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyB-LkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Feed_Direct_Channel_Name" prompt="Gen_RxShip_Feed_Direct_Channel_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;RxShip_Feed&quot;" internalId="_f4kdhDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyCOLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Name" prompt="ActiveMQ_Broker_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_f4kdhTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyCeLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Host" prompt="ActiveMQ_Broker_Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_f4kdhjVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyCuLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Port" prompt="ActiveMQ_Broker_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="61616" internalId="_f4kdhzVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyC-LkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_IsPersistent" prompt="ActiveMQ_Broker_IsPersistent?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_f4kdiDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyDOLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Persistence_Dir" prompt="ActiveMQ_Broker_Persistence_Dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/tmp/KahaDB" internalId="_f4kdiTVqEeu8GoZ4iFYSIQ"/>
+  </context>
+  <context xmi:id="_5dUyDeLkEe-NPIXwFIDMtg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_5dUyDuLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Period_ms" prompt="Gen_RxShip_Group_Period_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="2000" internalId="_f4kdijVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyD-LkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Repeat_count" prompt="Gen_RxShip_Group_Repeat_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_f4kdizVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyEOLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Row_Count_Min" prompt="Gen_RxShip_Group_Row_Count_Min?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_f4kdjDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyEeLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Row_Count_Max" prompt="Gen_RxShip_Group_Row_Count_Max?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5" internalId="_f4kdjTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyEuLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Start_Delay_ms" prompt="Gen_RxShip_Start_Delay_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1000" internalId="_f4kdjjVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyE-LkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Message_Delay_Min_ms" prompt="Gen_RxShip_Message_Delay_Min_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="100" internalId="_f4kdjzVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyFOLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Message_Delay_Max_ms" prompt="Gen_RxShip_Message_Delay_Max_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="2000" internalId="_f4kdkDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyFeLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Feed_Direct_Channel_Name" prompt="Gen_RxShip_Feed_Direct_Channel_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;RxShip_Feed&quot;" internalId="_f4kdkTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyFuLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Name" prompt="ActiveMQ_Broker_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_f4kdkjVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyF-LkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Host" prompt="ActiveMQ_Broker_Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_f4kdkzVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyGOLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Port" prompt="ActiveMQ_Broker_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="61616" internalId="_f4kdlDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyGeLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_IsPersistent" prompt="ActiveMQ_Broker_IsPersistent?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_f4kdlTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyGuLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Persistence_Dir" prompt="ActiveMQ_Broker_Persistence_Dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/tmp/KahaDB" internalId="_f4kdljVqEeu8GoZ4iFYSIQ"/>
+  </context>
+  <context xmi:id="_5dUyG-LkEe-NPIXwFIDMtg" confirmationNeeded="false" name="Generate_RxShip_Slow">
+    <contextParameter xmi:id="_5dUyHOLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Period_ms" prompt="Gen_RxShip_Group_Period_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5000" internalId="_f4kdlzVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyHeLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Repeat_count" prompt="Gen_RxShip_Group_Repeat_count?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_f4kdmDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyHuLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Row_Count_Min" prompt="Gen_RxShip_Group_Row_Count_Min?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_f4kdmTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyH-LkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Group_Row_Count_Max" prompt="Gen_RxShip_Group_Row_Count_Max?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="4" internalId="_f4kdmjVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyIOLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Start_Delay_ms" prompt="Gen_RxShip_Start_Delay_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1000" internalId="_f4kdmzVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyIeLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Message_Delay_Min_ms" prompt="Gen_RxShip_Message_Delay_Min_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="100" internalId="_f4kdnDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyIuLkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Message_Delay_Max_ms" prompt="Gen_RxShip_Message_Delay_Max_ms?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="4500" internalId="_f4kdnTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyI-LkEe-NPIXwFIDMtg" comment="" name="Gen_RxShip_Feed_Direct_Channel_Name" prompt="Gen_RxShip_Feed_Direct_Channel_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;RxShip_Feed&quot;" internalId="_f4kdnjVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyJOLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Name" prompt="ActiveMQ_Broker_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_f4kdnzVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyJeLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Host" prompt="ActiveMQ_Broker_Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_f4kdoDVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyJuLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Port" prompt="ActiveMQ_Broker_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="61616" internalId="_f4kdoTVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyJ-LkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_IsPersistent" prompt="ActiveMQ_Broker_IsPersistent?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_f4kdojVqEeu8GoZ4iFYSIQ"/>
+    <contextParameter xmi:id="_5dUyKOLkEe-NPIXwFIDMtg" comment="" name="ActiveMQ_Broker_Persistence_Dir" prompt="ActiveMQ_Broker_Persistence_Dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/tmp/KahaDB" internalId="_f4kdozVqEeu8GoZ4iFYSIQ"/>
+  </context>
+  <parameters xmi:id="_5dUyKeLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUyKuLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_5dUyK-LkEe-NPIXwFIDMtg" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_5dUyLOLkEe-NPIXwFIDMtg" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_5dUyLeLkEe-NPIXwFIDMtg" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyLuLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyL-LkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyMOLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyMeLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyMuLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyM-LkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyNOLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyNeLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyNuLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyN-LkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyOOLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyOeLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyOuLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyO-LkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_5dUyPOLkEe-NPIXwFIDMtg" id="_pGXIwG6jEeqXFo7T3Rtgng" name="DQTechnical"/>
+    <routinesParameter xmi:id="_5dUyPeLkEe-NPIXwFIDMtg" id="_pF4AkG6jEeqXFo7T3Rtgng" name="DataMasking"/>
+    <routinesParameter xmi:id="_5dUyPuLkEe-NPIXwFIDMtg" id="_pElnIG6jEeqXFo7T3Rtgng" name="DataOperation"/>
+    <routinesParameter xmi:id="_5dUyP-LkEe-NPIXwFIDMtg" id="_pGJGUG6jEeqXFo7T3Rtgng" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_5dUyQOLkEe-NPIXwFIDMtg" id="_pGBxkG6jEeqXFo7T3Rtgng" name="DataQuality"/>
+    <routinesParameter xmi:id="_5dUyQeLkEe-NPIXwFIDMtg" id="_pGPM8G6jEeqXFo7T3Rtgng" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_5dUyQuLkEe-NPIXwFIDMtg" id="_pEsU0G6jEeqXFo7T3Rtgng" name="Mathematical"/>
+    <routinesParameter xmi:id="_5dUyQ-LkEe-NPIXwFIDMtg" id="_pE03sG6jEeqXFo7T3Rtgng" name="Numeric"/>
+    <routinesParameter xmi:id="_5dUyROLkEe-NPIXwFIDMtg" id="_pE8McG6jEeqXFo7T3Rtgng" name="Relational"/>
+    <routinesParameter xmi:id="_5dUyReLkEe-NPIXwFIDMtg" id="_pFwEwG6jEeqXFo7T3Rtgng" name="SQLike"/>
+    <routinesParameter xmi:id="_5dUyRuLkEe-NPIXwFIDMtg" id="_pFC6IG6jEeqXFo7T3Rtgng" name="StringHandling"/>
+    <routinesParameter xmi:id="_5dUyR-LkEe-NPIXwFIDMtg" id="_pFMrIG6jEeqXFo7T3Rtgng" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_5dUySOLkEe-NPIXwFIDMtg" id="_pFV1EG6jEeqXFo7T3Rtgng" name="TalendDate"/>
+    <routinesParameter xmi:id="_5dUySeLkEe-NPIXwFIDMtg" id="_pFoI8G6jEeqXFo7T3Rtgng" name="TalendStringUtil"/>
+    <routinesParameter xmi:id="_5dUySuLkEe-NPIXwFIDMtg" id="_pFfmEG6jEeqXFo7T3Rtgng" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_5dUyS-LkEe-NPIXwFIDMtg" componentName="Rx_Ship_Feed" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="416">
+    <elementParameter xmi:id="_5dUyTOLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="Rx_Ship_Feed_1"/>
+    <elementParameter xmi:id="_5dUyTeLkEe-NPIXwFIDMtg" field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUyTuLkEe-NPIXwFIDMtg" field="PROCESS_TYPE" name="PROCESS_TYPE" value="Rx_Ship_Feed"/>
+    <elementParameter xmi:id="_5dUyT-LkEe-NPIXwFIDMtg" field="TECHNICAL" name="PROCESS_TYPE:PROCESS_TYPE_CONTEXT" value="Generate_RxShip_Fast"/>
+    <elementParameter xmi:id="_5dUyUOLkEe-NPIXwFIDMtg" field="TECHNICAL" name="PROCESS_TYPE:PROCESS_TYPE_PROCESS" value="_-8UDEBPQEeuqY5SIe_6ntQ" show="false"/>
+    <elementParameter xmi:id="_5dUyUeLkEe-NPIXwFIDMtg" field="TECHNICAL" name="PROCESS_TYPE:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter xmi:id="_5dUyUuLkEe-NPIXwFIDMtg" field="RADIO" name="SELECTED_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_5dUyU-LkEe-NPIXwFIDMtg" field="RADIO" name="ROUTE_CONTEXT" value="true"/>
+    <elementParameter xmi:id="_5dUyVOLkEe-NPIXwFIDMtg" field="RADIO" name="ROUTELET_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_5dUyVeLkEe-NPIXwFIDMtg" field="TABLE" name="CONTEXT_PARAM">
+      <elementValue xmi:id="_5dUyVuLkEe-NPIXwFIDMtg" elementRef="Parameters" value="Gen_RxShip_Feed_Direct_Channel_Name"/>
+      <elementValue xmi:id="_5dUyV-LkEe-NPIXwFIDMtg" elementRef="Values" value="context.Gen_RxShip_Feed_Direct_Channel_Name"/>
+    </elementParameter>
+    <elementParameter xmi:id="_5dUyWOLkEe-NPIXwFIDMtg" field="TEXT" name="LABEL" value="Rx_Ship_Feed"/>
+    <elementParameter xmi:id="_5dUyWeLkEe-NPIXwFIDMtg" field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter xmi:id="_5dUyWuLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUyW-LkEe-NPIXwFIDMtg" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_5dUyXOLkEe-NPIXwFIDMtg" field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node xmi:id="_5dUyXeLkEe-NPIXwFIDMtg" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="416">
+    <elementParameter xmi:id="_5dUyXuLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_5dUyX-LkEe-NPIXwFIDMtg" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUyYOLkEe-NPIXwFIDMtg" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_5dUyYeLkEe-NPIXwFIDMtg" field="TEXT" name="NAME" value="context.Gen_RxShip_Feed_Direct_Channel_Name"/>
+    <elementParameter xmi:id="_5dUyYuLkEe-NPIXwFIDMtg" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_5dUyY-LkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUyZOLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUyZeLkEe-NPIXwFIDMtg" componentName="cJMS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="416">
+    <elementParameter xmi:id="_5dUyZuLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cJMS_1" show="false"/>
+    <elementParameter xmi:id="_5dUyZ-LkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="TYPE" value="queue"/>
+    <elementParameter xmi:id="_5dUyaOLkEe-NPIXwFIDMtg" field="TEXT" name="DESTINATION" value="&quot;rx.fill.Shipping&quot;"/>
+    <elementParameter xmi:id="_5dUyaeLkEe-NPIXwFIDMtg" field="ROUTE_COMPONENT_TYPE" name="CONNECTION_FACOTRY_CONFIGURATION" value="cMQConnectionFactory_1"/>
+    <elementParameter xmi:id="_5dUyauLkEe-NPIXwFIDMtg" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_5dUya-LkEe-NPIXwFIDMtg" field="TEXT" name="LABEL" value="rx.fill.Shipping"/>
+    <elementParameter xmi:id="_5dUybOLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUybeLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUybuLkEe-NPIXwFIDMtg" componentName="cMQConnectionFactory" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="512">
+    <elementParameter xmi:id="_5dUyb-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cMQConnectionFactory_1" show="false"/>
+    <elementParameter xmi:id="_5dUycOLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="MQ_TYPE" value="ActiveMQ"/>
+    <elementParameter xmi:id="_5dUyceLkEe-NPIXwFIDMtg" field="CHECK" name="USE_TRANSACTION" value="false"/>
+    <elementParameter xmi:id="_5dUycuLkEe-NPIXwFIDMtg" field="TEXT" name="AMQ_BROKER_URI" value="&quot;vm://localhost&quot;"/>
+    <elementParameter xmi:id="_5dUyc-LkEe-NPIXwFIDMtg" field="CHECK" name="IS_AMQ_HTTP_BROKER" value="false"/>
+    <elementParameter xmi:id="_5dUydOLkEe-NPIXwFIDMtg" field="CHECK" name="AMQ_POOL" value="false"/>
+    <elementParameter xmi:id="_5dUydeLkEe-NPIXwFIDMtg" field="TEXT" name="AMQ_POOL_MAX_CONNECTIONS" value="1" show="false"/>
+    <elementParameter xmi:id="_5dUyduLkEe-NPIXwFIDMtg" field="TEXT" name="AMQ_POOL_MAX_ACTIVE" value="500" show="false"/>
+    <elementParameter xmi:id="_5dUyd-LkEe-NPIXwFIDMtg" field="TEXT" name="AMQ_POOL_IDLE_TIMEOUT" value="30000" show="false"/>
+    <elementParameter xmi:id="_5dUyeOLkEe-NPIXwFIDMtg" field="TEXT" name="AMQ_POOL_EXPIRY_TIMEOUT" value="60000" show="false"/>
+    <elementParameter xmi:id="_5dUyeeLkEe-NPIXwFIDMtg" field="CHECK" name="AMQ_AUTH" value="false"/>
+    <elementParameter xmi:id="_5dUyeuLkEe-NPIXwFIDMtg" field="TEXT" name="AMQ_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUye-LkEe-NPIXwFIDMtg" field="PASSWORD" name="AMQ_PASSWORD" value="enc:system.encryption.key.v1:1YUz5PEjfwTeVN1xNF6xeysQafEtnRZJE3RtFV0H" show="false"/>
+    <elementParameter xmi:id="_5dUyfOLkEe-NPIXwFIDMtg" field="CHECK" name="AMQ_USE_RETROACTIVE_CONSUMER" value="false"/>
+    <elementParameter xmi:id="_5dUyfeLkEe-NPIXwFIDMtg" field="TEXT" name="WQM_SEVER" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyfuLkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_PORT" value="1414" show="false"/>
+    <elementParameter xmi:id="_5dUyf-LkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="WMQ_TRANSPORT_TYPE" value="1" show="false"/>
+    <elementParameter xmi:id="_5dUygOLkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_QUEUE_MANAGER" value="&quot;mq.queue.manager&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUygeLkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_CHANNEL" value="&quot;SYSTEM.DEF.SVRCONN&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyguLkEe-NPIXwFIDMtg" field="CHECK" name="WMQ_AUTH" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUyg-LkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyhOLkEe-NPIXwFIDMtg" field="PASSWORD" name="WMQ_PASSWORD" value="enc:system.encryption.key.v1:IcQOHzhd53iLrX7fXd9vdTOL7gxyxd+YLmzXj5sf" show="false"/>
+    <elementParameter xmi:id="_5dUyheLkEe-NPIXwFIDMtg" field="TABLE" name="WMQ_DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_5dUyhuLkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_N_SEVER" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyh-LkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_N_PORT" value="&quot;1414&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyiOLkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_N_CHANNEL" value="&quot;channel.name&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyieLkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_N_NAME" value="&quot;default&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyiuLkEe-NPIXwFIDMtg" field="CHECK" name="WMQ_N_AUTH" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUyi-LkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_N_CCSID" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyjOLkEe-NPIXwFIDMtg" field="TEXT" name="WMQ_N_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyjeLkEe-NPIXwFIDMtg" field="PASSWORD" name="WMQ_N_PASSWORD" value="enc:system.encryption.key.v1:Ky0k3Lp2IGWglDAWgfzOCIggHn5WZvmM3e2eKDJ9" show="false"/>
+    <elementParameter xmi:id="_5dUyjuLkEe-NPIXwFIDMtg" field="TABLE" name="WMQ_N_DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_5dUyj-LkEe-NPIXwFIDMtg" field="TEXT" name="AMQP_BROKER_URI" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUykOLkEe-NPIXwFIDMtg" field="TEXT" name="AMQP_PORT" value="&quot;5672&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUykeLkEe-NPIXwFIDMtg" field="CHECK" name="AMQP_SSL" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUykuLkEe-NPIXwFIDMtg" field="CHECK" name="AMQP_USE_AUTH" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUyk-LkEe-NPIXwFIDMtg" field="TEXT" name="AMQP_USERNAME" value="&quot;guest&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUylOLkEe-NPIXwFIDMtg" field="PASSWORD" name="AMQP_PASSWORD" value="enc:system.encryption.key.v1:BUVj+LF0N/4izdeZHdsSe23D305qhjBa2H0B1y4Mg0/rQZc=" show="false"/>
+    <elementParameter xmi:id="_5dUyleLkEe-NPIXwFIDMtg" field="TEXT" name="MQTT_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyluLkEe-NPIXwFIDMtg" field="TEXT" name="MQTT_PORT" value="1883" show="false"/>
+    <elementParameter xmi:id="_5dUyl-LkEe-NPIXwFIDMtg" field="CHECK" name="MQTT_SSL" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUymOLkEe-NPIXwFIDMtg" field="FILE" name="MQTT_SSL_TRUST_STORE" value="" show="false"/>
+    <elementParameter xmi:id="_5dUymeLkEe-NPIXwFIDMtg" field="PASSWORD" name="MQTT_SSL_TRUST_STORE_PASSWORD" value="" show="false"/>
+    <elementParameter xmi:id="_5dUymuLkEe-NPIXwFIDMtg" field="FILE" name="MQTT_SSL_KEY_STORE" value="" show="false"/>
+    <elementParameter xmi:id="_5dUym-LkEe-NPIXwFIDMtg" field="PASSWORD" name="MQTT_SSL_KEY_STORE_PASSWORD" value="" show="false"/>
+    <elementParameter xmi:id="_5dUynOLkEe-NPIXwFIDMtg" field="TEXT" name="MQTT_CONNECT_ATTEMPTS" value="-1" show="false"/>
+    <elementParameter xmi:id="_5dUyneLkEe-NPIXwFIDMtg" field="TEXT" name="MQTT_RECONNECT_ATTEMPTS" value="-1" show="false"/>
+    <elementParameter xmi:id="_5dUynuLkEe-NPIXwFIDMtg" field="TEXT" name="MQTT_RECONNECT_DELAY" value="10" show="false"/>
+    <elementParameter xmi:id="_5dUyn-LkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="MQTT_QOS" value="0" show="false"/>
+    <elementParameter xmi:id="_5dUyoOLkEe-NPIXwFIDMtg" field="TEXT" name="MQTT_CONNECT_WAIT_IN_SECONDS" value="10" show="false"/>
+    <elementParameter xmi:id="_5dUyoeLkEe-NPIXwFIDMtg" field="TEXT" name="MQTT_DISCONNECT_WAIT_IN_SECONDS" value="5" show="false"/>
+    <elementParameter xmi:id="_5dUyouLkEe-NPIXwFIDMtg" field="TEXT" name="MQTT_SEND_WAIT_IN_SECONDS" value="5" show="false"/>
+    <elementParameter xmi:id="_5dUyo-LkEe-NPIXwFIDMtg" field="MEMO_JAVA" name="OTHER_CODE" value="&#xA;&#x9;&#x9;&#x9;&#x9;/*&#xA;&#x9;&#x9;&#x9;&#x9;* Please specify &quot;jmsConnectionFactory&quot; here&#xA;&#x9;&#x9;&#x9;&#x9;*/&#xA;&#x9;&#x9;&#x9;&#x9;//jmsConnectionFactory = new org.apache.activemq.ActiveMQConnectionFactory(&quot;vm://localhost?broker.persistent=false&quot;);&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter xmi:id="_5dUypOLkEe-NPIXwFIDMtg" field="TABLE" name="OTHER_DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_5dUypeLkEe-NPIXwFIDMtg" field="CHECK" name="MQTT_AUTH" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUypuLkEe-NPIXwFIDMtg" field="TEXT" name="MQTT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyp-LkEe-NPIXwFIDMtg" field="PASSWORD" name="MQTT_PASSWORD" value="enc:system.encryption.key.v1:Nx6vCh3PF2WqRvRV7P2zsqK5j2rHq9/wxo4ZfNim" show="false"/>
+    <elementParameter xmi:id="_5dUyqOLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUyqeLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUyquLkEe-NPIXwFIDMtg" componentName="cJMS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
+    <elementParameter xmi:id="_5dUyq-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cJMS_2" show="false"/>
+    <elementParameter xmi:id="_5dUyrOLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="TYPE" value="queue"/>
+    <elementParameter xmi:id="_5dUyreLkEe-NPIXwFIDMtg" field="TEXT" name="DESTINATION" value="&quot;rx.fill.Shipping&quot;"/>
+    <elementParameter xmi:id="_5dUyruLkEe-NPIXwFIDMtg" field="ROUTE_COMPONENT_TYPE" name="CONNECTION_FACOTRY_CONFIGURATION" value="cMQConnectionFactory_1"/>
+    <elementParameter xmi:id="_5dUyr-LkEe-NPIXwFIDMtg" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_5dUysOLkEe-NPIXwFIDMtg" field="TEXT" name="LABEL" value="rx.fill.Shipping"/>
+    <elementParameter xmi:id="_5dUyseLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUysuLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUys-LkEe-NPIXwFIDMtg" componentName="cSetProperty" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
+    <elementParameter xmi:id="_5dUytOLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cSetProperty_1" show="false"/>
+    <elementParameter xmi:id="_5dUyteLkEe-NPIXwFIDMtg" field="TABLE" name="VALUES">
+      <elementValue xmi:id="_5dUytuLkEe-NPIXwFIDMtg" elementRef="NAME" value="&quot;TX_ID&quot;"/>
+      <elementValue xmi:id="_5dUyt-LkEe-NPIXwFIDMtg" elementRef="LANGUAGE" value="jsonpath"/>
+      <elementValue xmi:id="_5dUyuOLkEe-NPIXwFIDMtg" elementRef="EXPRESSION" value="&quot;$.txId&quot;"/>
+    </elementParameter>
+    <elementParameter xmi:id="_5dUyueLkEe-NPIXwFIDMtg" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUyuuLkEe-NPIXwFIDMtg" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_5dUyu-LkEe-NPIXwFIDMtg" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                     *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                     *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_5dUyvOLkEe-NPIXwFIDMtg" field="TEXT" name="LABEL" value="Introspect Transaction ID"/>
+    <elementParameter xmi:id="_5dUyveLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUyvuLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUyv-LkEe-NPIXwFIDMtg" componentName="cAggregate" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
+    <elementParameter xmi:id="_5dUywOLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cAggregate_1" show="false"/>
+    <elementParameter xmi:id="_5dUyweLkEe-NPIXwFIDMtg" field="LANGUAGE_CLOSED_LIST" name="LANGUAGES" value="property"/>
+    <elementParameter xmi:id="_5dUywuLkEe-NPIXwFIDMtg" field="TEXT" name="EXPRESSION" value="&quot;TX_ID&quot;"/>
+    <elementParameter xmi:id="_5dUyw-LkEe-NPIXwFIDMtg" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUyxOLkEe-NPIXwFIDMtg" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_5dUyxeLkEe-NPIXwFIDMtg" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                     *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                     *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_5dUyxuLkEe-NPIXwFIDMtg" field="TEXT" name="AGGREGATION_STRATEGY" value="beans.JSONArrayAggregationStrategy"/>
+    <elementParameter xmi:id="_5dUyx-LkEe-NPIXwFIDMtg" field="CHECK" name="USE_COMPLETION_SIZE" value="true"/>
+    <elementParameter xmi:id="_5dUyyOLkEe-NPIXwFIDMtg" field="TEXT" name="SIZE" value="simple(&quot;headers.TX_Ship_Count&quot;)"/>
+    <elementParameter xmi:id="_5dUyyeLkEe-NPIXwFIDMtg" field="CHECK" name="USE_COMPLETION_TIMEOUT" value="true"/>
+    <elementParameter xmi:id="_5dUyyuLkEe-NPIXwFIDMtg" field="TEXT" name="TIMEOUT" value="60000"/>
+    <elementParameter xmi:id="_5dUyy-LkEe-NPIXwFIDMtg" field="CHECK" name="USE_COMPLETION_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_5dUyzOLkEe-NPIXwFIDMtg" field="TEXT" name="INTERVAL" value="1000" show="false"/>
+    <elementParameter xmi:id="_5dUyzeLkEe-NPIXwFIDMtg" field="CHECK" name="USE_COMPLETION_PREDICATE" value="false"/>
+    <elementParameter xmi:id="_5dUyzuLkEe-NPIXwFIDMtg" field="TEXT" name="PREDICATE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUyz-LkEe-NPIXwFIDMtg" field="CHECK" name="USE_COMPLETION_BATCH" value="false"/>
+    <elementParameter xmi:id="_5dUy0OLkEe-NPIXwFIDMtg" field="CHECK" name="EAGER_CHECK_COMPLETION" value="false"/>
+    <elementParameter xmi:id="_5dUy0eLkEe-NPIXwFIDMtg" field="CHECK" name="CLOSE_CORRELATION" value="false"/>
+    <elementParameter xmi:id="_5dUy0uLkEe-NPIXwFIDMtg" field="TEXT" name="MAXIMUM_BOUND" value="1" show="false"/>
+    <elementParameter xmi:id="_5dUy0-LkEe-NPIXwFIDMtg" field="CHECK" name="IGNORE_INVALID_KEY" value="false"/>
+    <elementParameter xmi:id="_5dUy1OLkEe-NPIXwFIDMtg" field="CHECK" name="GROUP_EXCHANGES" value="false"/>
+    <elementParameter xmi:id="_5dUy1eLkEe-NPIXwFIDMtg" field="CHECK" name="USE_PERSISTENCE" value="false"/>
+    <elementParameter xmi:id="_5dUy1uLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="REPOSITORY" value="AGGREGATION" show="false"/>
+    <elementParameter xmi:id="_5dUy1-LkEe-NPIXwFIDMtg" field="TEXT" name="CUSTOM_REPOSITORY" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUy2OLkEe-NPIXwFIDMtg" field="CHECK" name="USE_PERSISTENT_FILE" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUy2eLkEe-NPIXwFIDMtg" field="TEXT" name="PERSISTENT_FILENAME" value="&quot;data/repo.dat&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUy2uLkEe-NPIXwFIDMtg" field="CHECK" name="USE_RECOVERY" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUy2-LkEe-NPIXwFIDMtg" field="TEXT" name="RECOVERY_INTERVAL" value="5000" show="false"/>
+    <elementParameter xmi:id="_5dUy3OLkEe-NPIXwFIDMtg" field="TEXT" name="DEAD_LETTER_URI" value="&quot;mock:dead&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUy3eLkEe-NPIXwFIDMtg" field="TEXT" name="MAXIMUM_REDELIVERIES" value="4" show="false"/>
+    <elementParameter xmi:id="_5dUy3uLkEe-NPIXwFIDMtg" field="TEXT" name="LABEL" value="Aggregate Transactions"/>
+    <elementParameter xmi:id="_5dUy3-LkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUy4OLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUy4eLkEe-NPIXwFIDMtg" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="128">
+    <elementParameter xmi:id="_5dUy4uLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_5dUy4-LkEe-NPIXwFIDMtg" field="TEXT" name="LOGGING_CATEGORY" value="&quot;consume.rxfill.Shipping&quot;"/>
+    <elementParameter xmi:id="_5dUy5OLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_5dUy5eLkEe-NPIXwFIDMtg" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_5dUy5uLkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_5dUy5-LkEe-NPIXwFIDMtg" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_5dUy6OLkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_5dUy6eLkEe-NPIXwFIDMtg" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_5dUy6uLkEe-NPIXwFIDMtg" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_5dUy6-LkEe-NPIXwFIDMtg" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_5dUy7OLkEe-NPIXwFIDMtg" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_5dUy7eLkEe-NPIXwFIDMtg" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_5dUy7uLkEe-NPIXwFIDMtg" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_5dUy7-LkEe-NPIXwFIDMtg" field="TEXT" name="MESSAGE" value="&quot;${property.TX_ID}\n${body}&quot;"/>
+    <elementParameter xmi:id="_5dUy8OLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUy8eLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUy8uLkEe-NPIXwFIDMtg" componentName="cSetHeader" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="128">
+    <elementParameter xmi:id="_5dUy8-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_1" show="false"/>
+    <elementParameter xmi:id="_5dUy9OLkEe-NPIXwFIDMtg" field="TABLE" name="VALUES">
+      <elementValue xmi:id="_5dUy9eLkEe-NPIXwFIDMtg" elementRef="NAME" value="&quot;Rx_Ship_TX_ID&quot;"/>
+      <elementValue xmi:id="_5dUy9uLkEe-NPIXwFIDMtg" elementRef="LANGUAGE" value="exchangeProperty"/>
+      <elementValue xmi:id="_5dUy9-LkEe-NPIXwFIDMtg" elementRef="EXPRESSION" value="&quot;TX_ID&quot;"/>
+    </elementParameter>
+    <elementParameter xmi:id="_5dUy-OLkEe-NPIXwFIDMtg" field="CHECK" name="USE_NAMESPACES" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUy-eLkEe-NPIXwFIDMtg" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_5dUy-uLkEe-NPIXwFIDMtg" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                     *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                     *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_5dUy--LkEe-NPIXwFIDMtg" field="TEXT" name="LABEL" value="Set Header for JMS"/>
+    <elementParameter xmi:id="_5dUy_OLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUy_eLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUy_uLkEe-NPIXwFIDMtg" componentName="cJMS" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="128">
+    <elementParameter xmi:id="_5dUy_-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cJMS_3" show="false"/>
+    <elementParameter xmi:id="_5dUzAOLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="TYPE" value="queue"/>
+    <elementParameter xmi:id="_5dUzAeLkEe-NPIXwFIDMtg" field="TEXT" name="DESTINATION" value="&quot;rx.fill.shipping.Transaction&quot;"/>
+    <elementParameter xmi:id="_5dUzAuLkEe-NPIXwFIDMtg" field="ROUTE_COMPONENT_TYPE" name="CONNECTION_FACOTRY_CONFIGURATION" value="cMQConnectionFactory_1"/>
+    <elementParameter xmi:id="_5dUzA-LkEe-NPIXwFIDMtg" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_5dUzBOLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUzBeLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUzBuLkEe-NPIXwFIDMtg" componentName="cExchangePattern" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="416">
+    <elementParameter xmi:id="_5dUzB-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cExchangePattern_1" show="false"/>
+    <elementParameter xmi:id="_5dUzCOLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="EXCHANGE_PATTERNS" value="InOnly"/>
+    <elementParameter xmi:id="_5dUzCeLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUzCuLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUzC-LkEe-NPIXwFIDMtg" componentName="cErrorHandler" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="320">
+    <elementParameter xmi:id="_5dUzDOLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cErrorHandler_1" show="false"/>
+    <elementParameter xmi:id="_5dUzDeLkEe-NPIXwFIDMtg" field="RADIO" name="ERROR_HANDLER" value="false"/>
+    <elementParameter xmi:id="_5dUzDuLkEe-NPIXwFIDMtg" field="RADIO" name="DEAD_LETTER" value="true"/>
+    <elementParameter xmi:id="_5dUzD-LkEe-NPIXwFIDMtg" field="RADIO" name="LOG_HANDLER" value="false"/>
+    <elementParameter xmi:id="_5dUzEOLkEe-NPIXwFIDMtg" field="TEXT" name="DEAD_LETTER_URI" value="&quot;direct:HandleError&quot;"/>
+    <elementParameter xmi:id="_5dUzEeLkEe-NPIXwFIDMtg" field="CHECK" name="USE_MAX_REDELIVERIES" value="true"/>
+    <elementParameter xmi:id="_5dUzEuLkEe-NPIXwFIDMtg" field="TEXT" name="MAX_REDELIVERIES" value="2"/>
+    <elementParameter xmi:id="_5dUzE-LkEe-NPIXwFIDMtg" field="CHECK" name="USE_REDELIVERY_DELAY" value="true"/>
+    <elementParameter xmi:id="_5dUzFOLkEe-NPIXwFIDMtg" field="TEXT" name="REDELIVERY_DELAY" value="1000"/>
+    <elementParameter xmi:id="_5dUzFeLkEe-NPIXwFIDMtg" field="CHECK" name="USE_RETRY_ATTEMP_LOG_LEVEL" value="false"/>
+    <elementParameter xmi:id="_5dUzFuLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="RETRY_ATTEMP_LOG_LEVEL" value="INFO" show="false"/>
+    <elementParameter xmi:id="_5dUzF-LkEe-NPIXwFIDMtg" field="CHECK" name="ASYNC_DELAYED_REDELIVERY" value="false"/>
+    <elementParameter xmi:id="_5dUzGOLkEe-NPIXwFIDMtg" field="CHECK" name="USE_ORIGINAL_MESSAGE" value="false"/>
+    <elementParameter xmi:id="_5dUzGeLkEe-NPIXwFIDMtg" field="CHECK" name="MORE_CONFIGURATION" value="false"/>
+    <elementParameter xmi:id="_5dUzGuLkEe-NPIXwFIDMtg" field="MEMO_JAVA" name="CODE" value="//.retryWhile(header(&quot;retry&quot;))" show="false"/>
+    <elementParameter xmi:id="_5dUzG-LkEe-NPIXwFIDMtg" field="CHECK" name="USE_LOG_NAME" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUzHOLkEe-NPIXwFIDMtg" field="TEXT" name="LOG_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUzHeLkEe-NPIXwFIDMtg" field="CHECK" name="USE_LOG_LEVEL" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUzHuLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="LOG_LEVEL" value="INFO" show="false"/>
+    <elementParameter xmi:id="_5dUzH-LkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUzIOLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUzIeLkEe-NPIXwFIDMtg" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="320">
+    <elementParameter xmi:id="_5dUzIuLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_5dUzI-LkEe-NPIXwFIDMtg" field="TEXT" name="LOGGING_CATEGORY" value="&quot;ExerciseM3a.cLog_3&quot;"/>
+    <elementParameter xmi:id="_5dUzJOLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_5dUzJeLkEe-NPIXwFIDMtg" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_5dUzJuLkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_5dUzJ-LkEe-NPIXwFIDMtg" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_5dUzKOLkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_5dUzKeLkEe-NPIXwFIDMtg" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_5dUzKuLkEe-NPIXwFIDMtg" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_5dUzK-LkEe-NPIXwFIDMtg" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_5dUzLOLkEe-NPIXwFIDMtg" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_5dUzLeLkEe-NPIXwFIDMtg" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_5dUzLuLkEe-NPIXwFIDMtg" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_5dUzL-LkEe-NPIXwFIDMtg" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5dUzMOLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUzMeLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUzMuLkEe-NPIXwFIDMtg" componentName="cDirect" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="320">
+    <elementParameter xmi:id="_5dUzM-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_5dUzNOLkEe-NPIXwFIDMtg" field="CHECK" name="INPUT_ENDPOINT_NAME" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUzNeLkEe-NPIXwFIDMtg" field="ROUTE_COMPONENT_TYPE" name="EXIST_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_5dUzNuLkEe-NPIXwFIDMtg" field="TEXT" name="NAME" value="&quot;HandleError&quot;"/>
+    <elementParameter xmi:id="_5dUzN-LkEe-NPIXwFIDMtg" field="TABLE" name="ADVARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_5dUzOOLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUzOeLkEe-NPIXwFIDMtg" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_5dUzOuLkEe-NPIXwFIDMtg" componentName="Training_Run_ActiveMQ_Routelet" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="512">
+    <elementParameter xmi:id="_5dUzO-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="Training_Run_ActiveMQ_Routelet_1"/>
+    <elementParameter xmi:id="_5dUzPOLkEe-NPIXwFIDMtg" field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter xmi:id="_5dUzPeLkEe-NPIXwFIDMtg" field="PROCESS_TYPE" name="PROCESS_TYPE" value="Training_Run_ActiveMQ_Routelet"/>
+    <elementParameter xmi:id="_5dUzPuLkEe-NPIXwFIDMtg" field="TECHNICAL" name="PROCESS_TYPE:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter xmi:id="_5dUzP-LkEe-NPIXwFIDMtg" field="TECHNICAL" name="PROCESS_TYPE:PROCESS_TYPE_PROCESS" value="_GRS-MBoUEeua9ItJoqR7yg" show="false"/>
+    <elementParameter xmi:id="_5dUzQOLkEe-NPIXwFIDMtg" field="TECHNICAL" name="PROCESS_TYPE:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter xmi:id="_5dUzQeLkEe-NPIXwFIDMtg" field="RADIO" name="SELECTED_CONTEXT" value="true"/>
+    <elementParameter xmi:id="_5dUzQuLkEe-NPIXwFIDMtg" field="RADIO" name="ROUTE_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_5dUzQ-LkEe-NPIXwFIDMtg" field="RADIO" name="ROUTELET_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_5dUzROLkEe-NPIXwFIDMtg" field="TABLE" name="CONTEXT_PARAM"/>
+    <elementParameter xmi:id="_5dUzReLkEe-NPIXwFIDMtg" field="TEXT" name="LABEL" value="Training_Run_ActiveMQ_Routelet"/>
+    <elementParameter xmi:id="_5dUzRuLkEe-NPIXwFIDMtg" field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter xmi:id="_5dUzR-LkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_5dUzSOLkEe-NPIXwFIDMtg" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_5dUzSeLkEe-NPIXwFIDMtg" field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection xmi:id="_5dUzSuLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="Rx_Shipping_Feed" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cDirect_1" target="cExchangePattern_1">
+    <elementParameter xmi:id="_5dUzS-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="Rx_Shipping_Feed" show="false"/>
+  </connection>
+  <connection xmi:id="_5dUzTOLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route1" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cJMS_2" target="cSetProperty_1">
+    <elementParameter xmi:id="_5dUzTeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_5dUzTuLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cSetProperty_1" offsetLabelX="0" offsetLabelY="0" source="cSetProperty_1" target="cAggregate_1">
+    <elementParameter xmi:id="_5dUzT-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_5dUzUOLkEe-NPIXwFIDMtg" connectorName="AGGREGATE" label="aggregate1" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cAggregate_1" target="cLog_2">
+    <elementParameter xmi:id="_5dUzUeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="aggregate1" show="false"/>
+  </connection>
+  <connection xmi:id="_5dUzUuLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route3" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLog_2" target="cSetHeader_1">
+    <elementParameter xmi:id="_5dUzU-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <connection xmi:id="_5dUzVOLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route4" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cSetHeader_1" target="cJMS_3">
+    <elementParameter xmi:id="_5dUzVeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route4" show="false"/>
+  </connection>
+  <connection xmi:id="_5dUzVuLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route5" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cExchangePattern_1" target="cJMS_1">
+    <elementParameter xmi:id="_5dUzV-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route5" show="false"/>
+  </connection>
+  <connection xmi:id="_5dUzWOLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route6" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cDirect_2" target="cLog_3">
+    <elementParameter xmi:id="_5dUzWeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route6" show="false"/>
+  </connection>
+  <note xmi:id="_5dUzWuLkEe-NPIXwFIDMtg" opaque="true" posX="64" posY="320" sizeHeight="289" sizeWidth="833" text="&#xD;&#xA;&#x9;Environment Provisions">
+    <elementParameter xmi:id="_5dUzW-LkEe-NPIXwFIDMtg" field="COLOR" name="NOTE_COLOR" value="166;193;152"/>
+    <elementParameter xmi:id="_5dUzXOLkEe-NPIXwFIDMtg" field="COLOR" name="NOTETXT_COLOR" value="255;255;255"/>
+    <elementParameter xmi:id="_5dUzXeLkEe-NPIXwFIDMtg" field="RADIO" name="NOTETXT_LEFT" value="true"/>
+    <elementParameter xmi:id="_5dUzXuLkEe-NPIXwFIDMtg" field="RADIO" name="NOTETXT_CENTER" value="false"/>
+    <elementParameter xmi:id="_5dUzX-LkEe-NPIXwFIDMtg" field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+    <elementParameter xmi:id="_5dUzYOLkEe-NPIXwFIDMtg" field="RADIO" name="NOTETXT_TOP" value="true"/>
+    <elementParameter xmi:id="_5dUzYeLkEe-NPIXwFIDMtg" field="TEXT" name="FONT_SIZE" value="14"/>
+    <elementParameter xmi:id="_5dUzYuLkEe-NPIXwFIDMtg" field="CHECK" name="FONT_BOLD" value="true"/>
+    <elementParameter xmi:id="_5dUzY-LkEe-NPIXwFIDMtg" field="COLOR" name="NOTE_LINECOLOR" value="128;128;128"/>
+  </note>
+  <subjob xmi:id="_5dUzZOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzZeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="Rx_Ship_Feed_1" show="false"/>
+    <elementParameter xmi:id="_5dUzZuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzZ-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzaOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzaeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cDirect_1" show="false"/>
+    <elementParameter xmi:id="_5dUzauLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUza-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzbOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzbeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cJMS_1" show="false"/>
+    <elementParameter xmi:id="_5dUzbuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzb-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzcOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzceLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cMQConnectionFactory_1" show="false"/>
+    <elementParameter xmi:id="_5dUzcuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzc-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzdOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzdeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cJMS_2" show="false"/>
+    <elementParameter xmi:id="_5dUzduLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzd-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzeOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzeeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cSetProperty_1" show="false"/>
+    <elementParameter xmi:id="_5dUzeuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUze-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzfOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzfeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cAggregate_1" show="false"/>
+    <elementParameter xmi:id="_5dUzfuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzf-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzgOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzgeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_5dUzguLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzg-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzhOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzheLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_1" show="false"/>
+    <elementParameter xmi:id="_5dUzhuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzh-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUziOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzieLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cJMS_3" show="false"/>
+    <elementParameter xmi:id="_5dUziuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzi-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzjOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzjeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cExchangePattern_1" show="false"/>
+    <elementParameter xmi:id="_5dUzjuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzj-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzkOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzkeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cErrorHandler_1" show="false"/>
+    <elementParameter xmi:id="_5dUzkuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzk-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzlOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzleLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_5dUzluLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzl-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUzmOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzmeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cDirect_2" show="false"/>
+    <elementParameter xmi:id="_5dUzmuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzm-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5dUznOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5dUzneLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="Training_Run_ActiveMQ_Routelet_1" show="false"/>
+    <elementParameter xmi:id="_5dUznuLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5dUzn-LkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

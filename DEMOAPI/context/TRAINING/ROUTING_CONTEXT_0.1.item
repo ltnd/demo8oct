@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_bz3acB0XEeuK6qCD_NWYdg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_bz3acR0XEeuK6qCD_NWYdg" comment="" name="working_directory" prompt="working_directory?" promptNeeded="false" type="id_Directory" value="/Users/marcbonnet/Documents/Talend/PresalesSEMEA - Documents/16_Team_Internal/09_MBO_SPACE/Camel Training -2020/INBOUD/"/>
+  <contextParameter xmi:id="_bz3ach0XEeuK6qCD_NWYdg" comment="" name="outbound_directory" prompt="outbound_directory?" promptNeeded="false" type="id_String" value="/Users/marcbonnet/Documents/Talend/PresalesSEMEA - Documents/16_Team_Internal/09_MBO_SPACE/Camel Training -2020/OUTBOUND/"/>
+</talendfile:ContextType>

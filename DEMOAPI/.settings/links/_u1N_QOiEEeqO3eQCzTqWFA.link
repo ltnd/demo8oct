@@ -1,0 +1,14 @@
+{
+  "itemId" : "_u1N_QOiEEeqO3eQCzTqWFA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_A4SGoOiGEeqO3eQCzTqWFA",
+    "parameterList" : [ {
+      "id" : "_bz3acR0XEeuK6qCD_NWYdg",
+      "name" : "working_directory"
+    }, {
+      "id" : "_bz3ach0XEeuK6qCD_NWYdg",
+      "name" : "outbound_directory"
+    } ]
+  } ]
+}

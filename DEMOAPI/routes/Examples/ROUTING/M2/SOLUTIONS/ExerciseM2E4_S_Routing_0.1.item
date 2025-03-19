@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_5clyIOLkEe-NPIXwFIDMtg" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_5clyIeLkEe-NPIXwFIDMtg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_5clyIuLkEe-NPIXwFIDMtg" comment="" name="working_directory" prompt="working_directory?" promptNeeded="false" repositoryContextId="_A4SGoOiGEeqO3eQCzTqWFA" type="id_Directory" value="/Users/marcbonnet/Documents/Talend/PresalesSEMEA - Documents/16_Team_Internal/09_MBO_SPACE/Camel Training -2020/INBOUD/"/>
+    <contextParameter xmi:id="_5clyI-LkEe-NPIXwFIDMtg" comment="" name="outbound_directory" prompt="outbound_directory?" promptNeeded="false" repositoryContextId="_A4SGoOiGEeqO3eQCzTqWFA" type="id_String" value="/Users/marcbonnet/Documents/Talend/PresalesSEMEA - Documents/16_Team_Internal/09_MBO_SPACE/Camel Training -2020/OUTBOUND/"/>
+  </context>
+  <parameters xmi:id="_5clyJOLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clyJeLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_5clyJuLkEe-NPIXwFIDMtg" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_5clyJ-LkEe-NPIXwFIDMtg" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_5clyKOLkEe-NPIXwFIDMtg" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_5clyKeLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_5clyKuLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_5clyK-LkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_5clyLOLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_5clyLeLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_5clyLuLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_5clyL-LkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_5clyMOLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_5clyMeLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_5clyMuLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_5clyM-LkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_5clyNOLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_5clyNeLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_5clyNuLkEe-NPIXwFIDMtg" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_5clyN-LkEe-NPIXwFIDMtg" id="_pGXIwG6jEeqXFo7T3Rtgng" name="DQTechnical"/>
+    <routinesParameter xmi:id="_5clyOOLkEe-NPIXwFIDMtg" id="_pF4AkG6jEeqXFo7T3Rtgng" name="DataMasking"/>
+    <routinesParameter xmi:id="_5clyOeLkEe-NPIXwFIDMtg" id="_pElnIG6jEeqXFo7T3Rtgng" name="DataOperation"/>
+    <routinesParameter xmi:id="_5clyOuLkEe-NPIXwFIDMtg" id="_pGJGUG6jEeqXFo7T3Rtgng" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_5clyO-LkEe-NPIXwFIDMtg" id="_pGBxkG6jEeqXFo7T3Rtgng" name="DataQuality"/>
+    <routinesParameter xmi:id="_5clyPOLkEe-NPIXwFIDMtg" id="_pGPM8G6jEeqXFo7T3Rtgng" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_5clyPeLkEe-NPIXwFIDMtg" id="_pEsU0G6jEeqXFo7T3Rtgng" name="Mathematical"/>
+    <routinesParameter xmi:id="_5clyPuLkEe-NPIXwFIDMtg" id="_pE03sG6jEeqXFo7T3Rtgng" name="Numeric"/>
+    <routinesParameter xmi:id="_5clyP-LkEe-NPIXwFIDMtg" id="_pE8McG6jEeqXFo7T3Rtgng" name="Relational"/>
+    <routinesParameter xmi:id="_5clyQOLkEe-NPIXwFIDMtg" id="_pFwEwG6jEeqXFo7T3Rtgng" name="SQLike"/>
+    <routinesParameter xmi:id="_5clyQeLkEe-NPIXwFIDMtg" id="_pFC6IG6jEeqXFo7T3Rtgng" name="StringHandling"/>
+    <routinesParameter xmi:id="_5clyQuLkEe-NPIXwFIDMtg" id="_pFMrIG6jEeqXFo7T3Rtgng" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_5clyQ-LkEe-NPIXwFIDMtg" id="_pFV1EG6jEeqXFo7T3Rtgng" name="TalendDate"/>
+    <routinesParameter xmi:id="_5clyROLkEe-NPIXwFIDMtg" id="_pFoI8G6jEeqXFo7T3Rtgng" name="TalendStringUtil"/>
+    <routinesParameter xmi:id="_5clyReLkEe-NPIXwFIDMtg" id="_pFfmEG6jEeqXFo7T3Rtgng" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_5clyRuLkEe-NPIXwFIDMtg" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
+    <elementParameter xmi:id="_5clyR-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_5clySOLkEe-NPIXwFIDMtg" field="DIRECTORY" name="URI" value="context.working_directory"/>
+    <elementParameter xmi:id="_5clySeLkEe-NPIXwFIDMtg" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_5clySuLkEe-NPIXwFIDMtg" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_5clyS-LkEe-NPIXwFIDMtg" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_5clyTOLkEe-NPIXwFIDMtg" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_5clyTeLkEe-NPIXwFIDMtg" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_5clyTuLkEe-NPIXwFIDMtg" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_5clyT-LkEe-NPIXwFIDMtg" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_5clyUOLkEe-NPIXwFIDMtg" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_5clyUeLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clyUuLkEe-NPIXwFIDMtg" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="160">
+    <elementParameter xmi:id="_5clyU-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_5clyVOLkEe-NPIXwFIDMtg" field="TEXT" name="LOGGING_CATEGORY" value="&quot;Module1_Moving_a_File.cLog_1&quot;"/>
+    <elementParameter xmi:id="_5clyVeLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="LEVEL_TYPE" value="DEBUG"/>
+    <elementParameter xmi:id="_5clyVuLkEe-NPIXwFIDMtg" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_5clyV-LkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_5clyWOLkEe-NPIXwFIDMtg" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_5clyWeLkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_5clyWuLkEe-NPIXwFIDMtg" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_5clyW-LkEe-NPIXwFIDMtg" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_5clyXOLkEe-NPIXwFIDMtg" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_5clyXeLkEe-NPIXwFIDMtg" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_5clyXuLkEe-NPIXwFIDMtg" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_5clyX-LkEe-NPIXwFIDMtg" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_5clyYOLkEe-NPIXwFIDMtg" field="TEXT" name="MESSAGE" value="&quot;${body}&quot;"/>
+    <elementParameter xmi:id="_5clyYeLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clyYuLkEe-NPIXwFIDMtg" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="32">
+    <elementParameter xmi:id="_5clyY-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+    <elementParameter xmi:id="_5clyZOLkEe-NPIXwFIDMtg" field="DIRECTORY" name="URI" value="context.outbound_directory + &quot;/Type_A/&quot;"/>
+    <elementParameter xmi:id="_5clyZeLkEe-NPIXwFIDMtg" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_5clyZuLkEe-NPIXwFIDMtg" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_5clyZ-LkEe-NPIXwFIDMtg" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_5clyaOLkEe-NPIXwFIDMtg" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_5clyaeLkEe-NPIXwFIDMtg" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_5clyauLkEe-NPIXwFIDMtg" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_5clya-LkEe-NPIXwFIDMtg" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_5clybOLkEe-NPIXwFIDMtg" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_5clybeLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clybuLkEe-NPIXwFIDMtg" componentName="cSplitter" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter xmi:id="_5clyb-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cSplitter_1" show="false"/>
+    <elementParameter xmi:id="_5clycOLkEe-NPIXwFIDMtg" field="LANGUAGE_CLOSED_LIST" name="LANGUAGES" value="xpath"/>
+    <elementParameter xmi:id="_5clyceLkEe-NPIXwFIDMtg" field="TEXT" name="EXPRESSION" value="&quot;/People/Person&quot;"/>
+    <elementParameter xmi:id="_5clycuLkEe-NPIXwFIDMtg" field="CHECK" name="USE_RESULT_CLASS_TYPE" value="false"/>
+    <elementParameter xmi:id="_5clyc-LkEe-NPIXwFIDMtg" field="TEXT" name="RESULT_CLASS_TYPE" value="java.lang.String.class" show="false"/>
+    <elementParameter xmi:id="_5clydOLkEe-NPIXwFIDMtg" field="CHECK" name="USE_NAMESPACES" value="false"/>
+    <elementParameter xmi:id="_5clydeLkEe-NPIXwFIDMtg" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_5clyduLkEe-NPIXwFIDMtg" field="CHECK" name="USE_STRATEGY" value="false"/>
+    <elementParameter xmi:id="_5clyd-LkEe-NPIXwFIDMtg" field="TEXT" name="AGGREGATION_STRATEGY" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5clyeOLkEe-NPIXwFIDMtg" field="CHECK" name="PARALLET_PROCESSING" value="false"/>
+    <elementParameter xmi:id="_5clyeeLkEe-NPIXwFIDMtg" field="CHECK" name="STOP_ON_EXCEPTION" value="false"/>
+    <elementParameter xmi:id="_5clyeuLkEe-NPIXwFIDMtg" field="CHECK" name="STREAMING" value="false"/>
+    <elementParameter xmi:id="_5clye-LkEe-NPIXwFIDMtg" field="CHECK" name="SHARE_UNIT_OF_WORK" value="false"/>
+    <elementParameter xmi:id="_5clyfOLkEe-NPIXwFIDMtg" field="TEXT" name="TIMEOUT" value=""/>
+    <elementParameter xmi:id="_5clyfeLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clyfuLkEe-NPIXwFIDMtg" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="160">
+    <elementParameter xmi:id="_5clyf-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_5clygOLkEe-NPIXwFIDMtg" field="TEXT" name="LOGGING_CATEGORY" value="&quot;ExerciseM2E2_Splitting_Records.cLog_2&quot;"/>
+    <elementParameter xmi:id="_5clygeLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_5clyguLkEe-NPIXwFIDMtg" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_5clyg-LkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_5clyhOLkEe-NPIXwFIDMtg" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_5clyheLkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_5clyhuLkEe-NPIXwFIDMtg" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_5clyh-LkEe-NPIXwFIDMtg" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_5clyiOLkEe-NPIXwFIDMtg" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_5clyieLkEe-NPIXwFIDMtg" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_5clyiuLkEe-NPIXwFIDMtg" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_5clyi-LkEe-NPIXwFIDMtg" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_5clyjOLkEe-NPIXwFIDMtg" field="TEXT" name="MESSAGE" value="&quot;Received record ${header.Record_ID} which was last updated ${header.Record_Updated}&quot;"/>
+    <elementParameter xmi:id="_5clyjeLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clyjuLkEe-NPIXwFIDMtg" componentName="cConvertBodyTo" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="160">
+    <elementParameter xmi:id="_5clyj-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cConvertBodyTo_1" show="false"/>
+    <elementParameter xmi:id="_5clykOLkEe-NPIXwFIDMtg" field="TEXT" name="TOCLASS" value="String.class"/>
+    <elementParameter xmi:id="_5clykeLkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clykuLkEe-NPIXwFIDMtg" componentName="cSetHeader" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="160">
+    <elementParameter xmi:id="_5clyk-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_1" show="false"/>
+    <elementParameter xmi:id="_5clylOLkEe-NPIXwFIDMtg" field="TABLE" name="VALUES">
+      <elementValue xmi:id="_5clyleLkEe-NPIXwFIDMtg" elementRef="NAME" value="&quot;Record_ID&quot;"/>
+      <elementValue xmi:id="_5clyluLkEe-NPIXwFIDMtg" elementRef="LANGUAGE" value="xpath"/>
+      <elementValue xmi:id="_5clyl-LkEe-NPIXwFIDMtg" elementRef="EXPRESSION" value="&quot;/Person/ID/text()&quot;"/>
+      <elementValue xmi:id="_5clymOLkEe-NPIXwFIDMtg" elementRef="NAME" value="&quot;Record_FirstName&quot;"/>
+      <elementValue xmi:id="_5clymeLkEe-NPIXwFIDMtg" elementRef="LANGUAGE" value="xpath"/>
+      <elementValue xmi:id="_5clymuLkEe-NPIXwFIDMtg" elementRef="EXPRESSION" value="&quot;/Person/FirstName/text()&quot;"/>
+      <elementValue xmi:id="_5clym-LkEe-NPIXwFIDMtg" elementRef="NAME" value="&quot;Record_LastName&quot;"/>
+      <elementValue xmi:id="_5clynOLkEe-NPIXwFIDMtg" elementRef="LANGUAGE" value="xpath"/>
+      <elementValue xmi:id="_5clyneLkEe-NPIXwFIDMtg" elementRef="EXPRESSION" value="&quot;/Person/LastName/text()&quot;"/>
+      <elementValue xmi:id="_5clynuLkEe-NPIXwFIDMtg" elementRef="NAME" value="&quot;Record_Updated&quot;"/>
+      <elementValue xmi:id="_5clyn-LkEe-NPIXwFIDMtg" elementRef="LANGUAGE" value="xpath"/>
+      <elementValue xmi:id="_5clyoOLkEe-NPIXwFIDMtg" elementRef="EXPRESSION" value="&quot;/Person/@Updated&quot;"/>
+      <elementValue xmi:id="_5clyoeLkEe-NPIXwFIDMtg" elementRef="NAME" value="&quot;CamelFileName&quot;"/>
+      <elementValue xmi:id="_5clyouLkEe-NPIXwFIDMtg" elementRef="LANGUAGE" value="simple"/>
+      <elementValue xmi:id="_5clyo-LkEe-NPIXwFIDMtg" elementRef="EXPRESSION" value="&quot;${header.Record_ID}.xml&quot;"/>
+    </elementParameter>
+    <elementParameter xmi:id="_5clypOLkEe-NPIXwFIDMtg" field="CHECK" name="USE_NAMESPACES" value="false"/>
+    <elementParameter xmi:id="_5clypeLkEe-NPIXwFIDMtg" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_5clypuLkEe-NPIXwFIDMtg" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;                     *Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;                     *Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_5clyp-LkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clyqOLkEe-NPIXwFIDMtg" componentName="cMessageRouter" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="160">
+    <elementParameter xmi:id="_5clyqeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cMessageRouter_1" show="false"/>
+    <elementParameter xmi:id="_5clyquLkEe-NPIXwFIDMtg" field="LANGUAGE_CLOSED_LIST" name="ROUTE_WHEN_LANGUAGES" value="constant" show="false"/>
+    <elementParameter xmi:id="_5clyq-LkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clyrOLkEe-NPIXwFIDMtg" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="160">
+    <elementParameter xmi:id="_5clyreLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cFile_3" show="false"/>
+    <elementParameter xmi:id="_5clyruLkEe-NPIXwFIDMtg" field="DIRECTORY" name="URI" value="context.outbound_directory + &quot;/Type_B/&quot;"/>
+    <elementParameter xmi:id="_5clyr-LkEe-NPIXwFIDMtg" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_5clysOLkEe-NPIXwFIDMtg" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_5clyseLkEe-NPIXwFIDMtg" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_5clysuLkEe-NPIXwFIDMtg" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_5clys-LkEe-NPIXwFIDMtg" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_5clytOLkEe-NPIXwFIDMtg" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_5clyteLkEe-NPIXwFIDMtg" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_5clytuLkEe-NPIXwFIDMtg" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_5clyt-LkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clyuOLkEe-NPIXwFIDMtg" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="288">
+    <elementParameter xmi:id="_5clyueLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cFile_4" show="false"/>
+    <elementParameter xmi:id="_5clyuuLkEe-NPIXwFIDMtg" field="DIRECTORY" name="URI" value="context.outbound_directory + &quot;/Type_C/&quot;"/>
+    <elementParameter xmi:id="_5clyu-LkEe-NPIXwFIDMtg" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_5clyvOLkEe-NPIXwFIDMtg" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_5clyveLkEe-NPIXwFIDMtg" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_5clyvuLkEe-NPIXwFIDMtg" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_5clyv-LkEe-NPIXwFIDMtg" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_5clywOLkEe-NPIXwFIDMtg" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_5clyweLkEe-NPIXwFIDMtg" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_5clywuLkEe-NPIXwFIDMtg" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_5clyw-LkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_5clyxOLkEe-NPIXwFIDMtg" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="288">
+    <elementParameter xmi:id="_5clyxeLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_5clyxuLkEe-NPIXwFIDMtg" field="TEXT" name="LOGGING_CATEGORY" value="&quot;ExerciseM2E3_Headers.cLog_3&quot;"/>
+    <elementParameter xmi:id="_5clyx-LkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_5clyyOLkEe-NPIXwFIDMtg" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_5clyyeLkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_5clyyuLkEe-NPIXwFIDMtg" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_5clyy-LkEe-NPIXwFIDMtg" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_5clyzOLkEe-NPIXwFIDMtg" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_5clyzeLkEe-NPIXwFIDMtg" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_5clyzuLkEe-NPIXwFIDMtg" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_5clyz-LkEe-NPIXwFIDMtg" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_5cly0OLkEe-NPIXwFIDMtg" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_5cly0eLkEe-NPIXwFIDMtg" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_5cly0uLkEe-NPIXwFIDMtg" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_5cly0-LkEe-NPIXwFIDMtg" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_5cly1OLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route1" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cFile_1" target="cLog_1">
+    <elementParameter xmi:id="_5cly1eLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_5cly1uLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route2" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLog_1" target="cSplitter_1">
+    <elementParameter xmi:id="_5cly1-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_5cly2OLkEe-NPIXwFIDMtg" connectorName="SPLIT" label="split1" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cSplitter_1" target="cConvertBodyTo_1">
+    <elementParameter xmi:id="_5cly2eLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="split1" show="false"/>
+  </connection>
+  <connection xmi:id="_5cly2uLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route5" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLog_2" target="cMessageRouter_1">
+    <elementParameter xmi:id="_5cly2-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route5" show="false"/>
+  </connection>
+  <connection xmi:id="_5cly3OLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route3" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cConvertBodyTo_1" target="cSetHeader_1">
+    <elementParameter xmi:id="_5cly3eLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <connection xmi:id="_5cly3uLkEe-NPIXwFIDMtg" connectorName="ROUTE" label="route4" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cSetHeader_1" target="cLog_2">
+    <elementParameter xmi:id="_5cly3-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="route4" show="false"/>
+  </connection>
+  <connection xmi:id="_5cly4OLkEe-NPIXwFIDMtg" connectorName="ROUTE_WHEN" label="when1" lineStyle="15" metaname="cMessageRouter_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="cMessageRouter_1" target="cFile_2">
+    <elementParameter xmi:id="_5cly4eLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="ROUTETYPE" value="xpath"/>
+    <elementParameter xmi:id="_5cly4uLkEe-NPIXwFIDMtg" field="MEMO_JAVA" name="CONDITION" value="&quot;/Person[@Type='A']&quot;"/>
+    <elementParameter xmi:id="_5cly4-LkEe-NPIXwFIDMtg" field="CHECK" name="ENDOFCHOICE" value="false"/>
+    <elementParameter xmi:id="_5cly5OLkEe-NPIXwFIDMtg" field="CHECK" name="USE_NAMESPACES" value="false"/>
+    <elementParameter xmi:id="_5cly5eLkEe-NPIXwFIDMtg" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_5cly5uLkEe-NPIXwFIDMtg" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;*Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_5cly5-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="when1" show="false"/>
+  </connection>
+  <connection xmi:id="_5cly6OLkEe-NPIXwFIDMtg" connectorName="ROUTE_WHEN" label="when2" lineStyle="15" metaname="cMessageRouter_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="cMessageRouter_1" target="cFile_3">
+    <elementParameter xmi:id="_5cly6eLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="ROUTETYPE" value="xpath"/>
+    <elementParameter xmi:id="_5cly6uLkEe-NPIXwFIDMtg" field="MEMO_JAVA" name="CONDITION" value="&quot;/Person[@Type='B']&quot;"/>
+    <elementParameter xmi:id="_5cly6-LkEe-NPIXwFIDMtg" field="CHECK" name="ENDOFCHOICE" value="false"/>
+    <elementParameter xmi:id="_5cly7OLkEe-NPIXwFIDMtg" field="CHECK" name="USE_NAMESPACES" value="false"/>
+    <elementParameter xmi:id="_5cly7eLkEe-NPIXwFIDMtg" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_5cly7uLkEe-NPIXwFIDMtg" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;*Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_5cly7-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="when2" show="false"/>
+  </connection>
+  <connection xmi:id="_5cly8OLkEe-NPIXwFIDMtg" connectorName="ROUTE_WHEN" label="when3" lineStyle="15" metaname="cMessageRouter_1" offsetLabelX="0" offsetLabelY="0" outputId="3" source="cMessageRouter_1" target="cFile_4">
+    <elementParameter xmi:id="_5cly8eLkEe-NPIXwFIDMtg" field="CLOSED_LIST" name="ROUTETYPE" value="xpath"/>
+    <elementParameter xmi:id="_5cly8uLkEe-NPIXwFIDMtg" field="MEMO_JAVA" name="CONDITION" value="&quot;/Person[@Type='C']&quot;"/>
+    <elementParameter xmi:id="_5cly8-LkEe-NPIXwFIDMtg" field="CHECK" name="ENDOFCHOICE" value="false"/>
+    <elementParameter xmi:id="_5cly9OLkEe-NPIXwFIDMtg" field="CHECK" name="USE_NAMESPACES" value="false"/>
+    <elementParameter xmi:id="_5cly9eLkEe-NPIXwFIDMtg" field="TABLE" name="NAMESPACES" show="false"/>
+    <elementParameter xmi:id="_5cly9uLkEe-NPIXwFIDMtg" field="LABEL" name="WARNING" value="*Note: For Bean Language, the Expression should be a qualified class name without quotes.&#xA;*Note: For None Language, the Value should be a full expression, instead of a plain text.&#xA;*Note: For XPath Language, the Namespaces will be used automatically if it's checked." show="false"/>
+    <elementParameter xmi:id="_5cly9-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="when3" show="false"/>
+  </connection>
+  <connection xmi:id="_5cly-OLkEe-NPIXwFIDMtg" connectorName="ROUTE_OTHER" label="otherwise1" lineStyle="16" metaname="cMessageRouter_1" offsetLabelX="0" offsetLabelY="0" source="cMessageRouter_1" target="cLog_3">
+    <elementParameter xmi:id="_5cly-eLkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="otherwise1" show="false"/>
+  </connection>
+  <subjob xmi:id="_5cly-uLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5cly--LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_5cly_OLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5cly_eLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5cly_uLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5cly_-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_5clzAOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzAeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5clzAuLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clzA-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+    <elementParameter xmi:id="_5clzBOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzBeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5clzBuLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clzB-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cSplitter_1" show="false"/>
+    <elementParameter xmi:id="_5clzCOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzCeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5clzCuLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clzC-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_2" show="false"/>
+    <elementParameter xmi:id="_5clzDOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzDeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5clzDuLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clzD-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cConvertBodyTo_1" show="false"/>
+    <elementParameter xmi:id="_5clzEOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzEeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5clzEuLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clzE-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cSetHeader_1" show="false"/>
+    <elementParameter xmi:id="_5clzFOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzFeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5clzFuLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clzF-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cMessageRouter_1" show="false"/>
+    <elementParameter xmi:id="_5clzGOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzGeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5clzGuLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clzG-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cFile_3" show="false"/>
+    <elementParameter xmi:id="_5clzHOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzHeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5clzHuLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clzH-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cFile_4" show="false"/>
+    <elementParameter xmi:id="_5clzIOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzIeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_5clzIuLkEe-NPIXwFIDMtg">
+    <elementParameter xmi:id="_5clzI-LkEe-NPIXwFIDMtg" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_5clzJOLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_5clzJeLkEe-NPIXwFIDMtg" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

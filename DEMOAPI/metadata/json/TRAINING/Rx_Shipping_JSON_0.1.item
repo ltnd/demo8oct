@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_ysFFwBVrEeuOK654mgDfFg" name="Rx_Shipping_JSON" dataPackage="_ysFFzxVrEeuOK654mgDfFg" JSONFilePath="F:/Training/Routing Getting Started Course/Materials/RxShipping.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_ysFFwRVrEeuOK654mgDfFg" LimitBoucle="-1" AbsoluteXPathQuery="$[*]">
+      <schemaTargets xmi:id="_ysFFwhVrEeuOK654mgDfFg" RelativeXPathQuery="timestamp" TagName="timestamp"/>
+      <schemaTargets xmi:id="_ysFFwxVrEeuOK654mgDfFg" RelativeXPathQuery="txId" TagName="txId"/>
+      <schemaTargets xmi:id="_ysFFxBVrEeuOK654mgDfFg" RelativeXPathQuery="rxNumber" TagName="rxNumber"/>
+      <schemaTargets xmi:id="_ysFFxRVrEeuOK654mgDfFg" RelativeXPathQuery="refillNumber" TagName="refillNumber"/>
+      <schemaTargets xmi:id="_ysFFxhVrEeuOK654mgDfFg" RelativeXPathQuery="packageId" TagName="packageId"/>
+      <schemaTargets xmi:id="_ysFFxxVrEeuOK654mgDfFg" RelativeXPathQuery="packId" TagName="packId"/>
+      <schemaTargets xmi:id="_ysFFyBVrEeuOK654mgDfFg" RelativeXPathQuery="trackingNumber" TagName="trackingNumber"/>
+      <schemaTargets xmi:id="_ysFFyRVrEeuOK654mgDfFg" RelativeXPathQuery="shipMode" TagName="shipMode"/>
+      <schemaTargets xmi:id="_ysFFyhVrEeuOK654mgDfFg" RelativeXPathQuery="shipClass" TagName="shipClass"/>
+      <schemaTargets xmi:id="_ysFFyxVrEeuOK654mgDfFg" RelativeXPathQuery="shipDate" TagName="shipDate"/>
+      <schemaTargets xmi:id="_ysFFzBVrEeuOK654mgDfFg" RelativeXPathQuery="shipTime" TagName="shipTime"/>
+      <schemaTargets xmi:id="_ysFFzRVrEeuOK654mgDfFg" RelativeXPathQuery="shipWeight" TagName="shipWeight"/>
+      <schemaTargets xmi:id="_ysFFzhVrEeuOK654mgDfFg" RelativeXPathQuery="shipCharge" TagName="shipCharge"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_ysFFzxVrEeuOK654mgDfFg" name="default" dataManager="_ysFFwBVrEeuOK654mgDfFg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ysFF0BVrEeuOK654mgDfFg" id="_T3XbYBVrEeuOK654mgDfFg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF0RVrEeuOK654mgDfFg" label="timestamp" length="23" talendType="id_Date" pattern="&quot;yyyy-MM-dd.HH:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF0hVrEeuOK654mgDfFg" label="txId" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF0xVrEeuOK654mgDfFg" label="rxNumber" length="9" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF1BVrEeuOK654mgDfFg" label="refillNumber" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF1RVrEeuOK654mgDfFg" label="packageId" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF1hVrEeuOK654mgDfFg" label="packId" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF1xVrEeuOK654mgDfFg" label="trackingNumber" length="20" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF2BVrEeuOK654mgDfFg" label="shipMode" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF2RVrEeuOK654mgDfFg" label="shipClass" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF2hVrEeuOK654mgDfFg" label="shipDate" length="10" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF2xVrEeuOK654mgDfFg" label="shipTime" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF3BVrEeuOK654mgDfFg" label="shipWeight" length="8" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ysFF3RVrEeuOK654mgDfFg" label="shipCharge" length="8" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
